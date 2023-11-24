@@ -50,7 +50,7 @@ const nav = [
   {
     label: "Activités",
     to: "/my",
-  },
+  }
 ];
 
 watch(currUser, async () => {

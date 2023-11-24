@@ -12,7 +12,7 @@
         {{ row.author.username }}
       </template>
       <template #title-data="{ row }">
-        <UButton variant="ghost" v-if="row.master === 0" :to="`assigned-${row.id}`">{{ row.title }}</UButton>
+        <UButton variant="ghost" v-if="row.master === 0" :to="`assigned/${row.id}`">{{ row.title }}</UButton>
         <span v-else>{{ row.title }}</span>
       </template>
     </UTable>
