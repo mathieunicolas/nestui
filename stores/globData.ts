@@ -2,7 +2,7 @@ import { useGetAllActivities } from "../composables/activities"
 
 export const useDataStore = defineStore('globData', () => {
   const users = ref([])
-  const dbURL = ref('http://localhost:3000')
+  const dbURL = ref('https://api.nicolas.zone')
   const currentUser = ref()
   const jwt = ref()
   const activities = ref([])

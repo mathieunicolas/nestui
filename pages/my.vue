@@ -102,6 +102,6 @@ const assignActi = async () => {
     method: "post",
     credentials: "include"
   });
-  gd.getAllActivities();
+  gd.getAllActivities()
 };
 </script>

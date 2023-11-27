@@ -1,13 +1,15 @@
 export const useGetAllActivities = async() => {
   const gd = useDataStore()
 
-  const { data, pending, error, refresh } = await useFetch(gd.dbURL+'/activities',{
+  const rs = await $fetch(gd.dbURL + '/activities', {
     method: 'get',
-    credentials: 'include',
-    headers: {
-          Authorization: `Bearer ${gd.jwt}`
-        }
-    })
+    credentials: 'include'
+  })
+  
+  // const { data, pending, error, refresh } = await useFetch(gd.dbURL+'/activities',{
+  //   method: 'get',
+  //   credentials: 'include'
+  //   })
     
-    return data.value ?? []
+    return rs ?? []
 }

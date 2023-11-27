@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   devServer: {
-    port: 3001
+    port: 3002
   },
   extends: ['@nuxt/ui-pro'],
   modules: ['@nuxt/ui', '@pinia/nuxt'],
